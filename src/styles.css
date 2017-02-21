@@ -1,1 +1,86 @@
-/* You can add global styles to this file, and also import other style files */
+.dropdown-menu {
+	font-size: 12px;
+	width: calc(100% - 30px); }
+.dropdown-menu .active {
+	color: #000000;
+	background-color: rgba(0,0,0,0) }
+
+/* trends bootstrap tab styling */
+#tab {
+	margin-top: 56px;
+	padding-top: 10px;
+  height: 700px;
+	background-color: #fafafa;}
+#tab ul.nav.nav-pills.justify-content-start {
+	width: auto!important;
+	margin: 0 auto!important;
+	display: table!important; }
+#tab ngb-tabset li {
+	text-align: center;
+	min-width: 100px;
+	margin: 0;
+	padding: 0;
+	border-bottom: 2px solid #000000; }
+#tab ul.nav.nav-pills.justify-content-start {
+	width: auto!important;
+	margin: 0 auto!important;
+	display: table!important; }
+#tab ul.nav.nav-pills.justify-content-start li {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	min-width: 125px; }
+#tab .nav-pills .nav-item.open .nav-link, .nav-pills .nav-item.open .nav-link:focus, .nav-pills .nav-item.open .nav-link:hover, .nav-pills .nav-link.active, .nav-pills .nav-link.active:focus, .nav-pills .nav-link.active:hover {
+	background-color: rgba(0,0,0,0);
+  font-weight: bold;
+  color: #000; }
+#tab .nav-item a {
+  color: #000000; }
+#tab ul.nav.nav-pills.justify-content-start li:nth-child(1) {
+	border-bottom: 2px solid #FFE710; }
+#tab ul.nav.nav-pills.justify-content-start li:nth-child(2) {
+	border-bottom: 2px solid #00aced; }
+#tab ul.nav.nav-pills.justify-content-start li:nth-child(3) {
+	border-bottom: 2px solid #bb0000; }
+
+/* youtube component styling */
+#youtube {
+	padding: 35px !important; }
+
+#youtube .card {
+	display: -webkit-inline-box;
+	width: 100%;
+	margin-bottom: 25px;
+	box-shadow: 0 2px 15px 0 rgba(0,0,0,0.1);
+  border: 0; }
+#youtube .card:hover {
+	box-shadow: 0 4px 17px 0 rgba(0,0,0,0.5);
+    border: 0; }
+#youtube .card-block {
+	display: inline-flex;
+	padding: 0; }
+#youtube .card-header {
+	display: none;
+	height: 40px;
+  background-size: 70px 40px;
+  background-position: 10px 0px;
+  background-repeat: no-repeat; }
+#youtube .card-header a {
+  display: none; }
+#youtube .img-container {
+	width: 120px; }
+#youtube img {
+	width: 120px;
+	height: 90px; }
+#youtube .video-title {
+	padding: 8px;
+    font-size: 14px; }
+#youtube b {
+	font-size: 14px;
+ 	color: #2381C9;}
+#youtube .video-desc {
+	font-size: 12px;
+	padding: 5px 10px 5px 10px; }
+.modal-body {
+	padding: 0px;
+}

@@ -1,0 +1,28 @@
+<template #typeAheadTemplate let-country="result" let-t="term">
+  	{{ country.name }}
+</template>
+<div id="page-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+		<div class="col-md-3 hidden-sm">
+			<span class="glyphicon glyphicon-flash" aria-hidden="true" href="#"></span>
+			<span class="header-text">Topical</span>
+	  </div>
+		<div class="col-md-6 col-xs-12">
+	    	<div class="form-group">
+	  			<input type="text"
+	  				   class="form-control"
+	  				   placeholder="Enter your country"
+	  				   [(ngModel)]="selectedCountry"
+	  				   [ngbTypeahead]="search"
+	  				   [resultTemplate]="typeAheadTemplate"
+	  				   [inputFormatter]="formatter"
+	  				   (ngModelChange)="selectCountry(selectedCountry)" />
+			  </div>
+	  </div>
+		<div class="col-md-3 hidden-sm">
+			<a class="nav-link" href="https://github.com/jasodeep/topical">
+				<i class="fa fa-github" aria-hidden="true"></i>
+			</a>
+	  </div>
+	</nav>
+</div>

@@ -1,0 +1,29 @@
+#page-header a {
+	color: #000000; }
+#page-header .glyphicon {
+	padding: 10px;
+	font-size: 30px; }
+#page-header .form-group {
+	margin: 0; }
+#page-header .fa {
+	padding: 10px;
+	font-size: 30px; }
+#page-header .header-text {
+	vertical-align: super;
+	font-size: 25px; }
+#page-header .nav-link {
+	float: right;
+	padding-right: 10px; }
+#page-header .form-control:focus {
+	border-color: rgba(0,0,0,0); }
+#page-header input:focus {
+	border-width: 0;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0,0,0,.2); }
+#page-header input {
+	height: 35px;
+	font-size: 14px;
+	margin: 10px 0 10px 0; }
+#page-header nav {
+	padding: 0;
+	background-color: #ffffff;
+	box-shadow: 0 2px 9px 0 rgba(0,0,0,0.1); }
