@@ -5,6 +5,7 @@ import { HttpModule, JsonpModule } from '@angular/http';
 
 import { NgbTypeaheadConfig, NgbTypeaheadModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Ng2Bs3ModalModule } from 'ng2-bs3-modal/ng2-bs3-modal';
+
 import { MomentModule } from 'angular2-moment';
 
 import { AppComponent } from './app.component';

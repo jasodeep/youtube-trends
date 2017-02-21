@@ -3,7 +3,9 @@
         <h4 class="modal-title">Modal</h4>
     </modal-header>
     <modal-body>
+      <div class="video-container" style="height:315px;">
         <iframe width="100%" height="315" [src]="embedUrl" frameborder="0" allowfullscreen></iframe>
+      </div>
     </modal-body>
     <modal-footer>
       <button type="button" class="btn btn-default" data-dismiss="modal" (click)="modalClose()">Close</button>
@@ -18,7 +20,7 @@
             <img src="{{videos.thumbnail}}">
           </div>
           <div class="video-desc">
-            <b>{{ videos.title | limitTo: 30 }}</b><br>
+            <b>{{ videos.title | limitTo: 28 }}</b><br>
             {{ videos.viewCount }} views<br>
             {{ videos.likeCount }} likes<br>
             {{ videos.publishedAt }}
