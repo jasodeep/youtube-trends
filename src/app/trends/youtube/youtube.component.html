@@ -1,3 +1,29 @@
-<p>
-  youtube works!
-</p>
+<modal #modal>
+    <modal-header [show-close]="true">
+        <h4 class="modal-title">Modal</h4>
+    </modal-header>
+    <modal-body>
+        <iframe width="100%" height="315" [src]="embedUrl" frameborder="0" allowfullscreen></iframe>
+    </modal-body>
+    <modal-footer>
+      <button type="button" class="btn btn-default" data-dismiss="modal" (click)="modalClose()">Close</button>
+    </modal-footer>
+</modal>
+
+<div id="youtube">
+  <div class="row">
+    <div class="col-md-4 col-sm-12" *ngFor="let videos of trendingVideos; let i = index">
+      <div class="card" (click)="this.openVideoPlayer(videos.id)">
+          <div class="img-container">
+            <img src="{{videos.thumbnail}}">
+          </div>
+          <div class="video-desc">
+            <b>{{ videos.title | limitTo: 30 }}</b><br>
+            {{ videos.viewCount }} views<br>
+            {{ videos.likeCount }} likes<br>
+            {{ videos.publishedAt }}
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

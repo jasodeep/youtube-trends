@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-trends',
+  selector: 'trends',
   templateUrl: './trends.component.html',
   styleUrls: ['./trends.component.css']
 })
