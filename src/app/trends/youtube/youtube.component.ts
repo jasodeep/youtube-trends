@@ -16,6 +16,7 @@ import * as moment from 'moment';
 export class YoutubeComponent implements OnInit {
 
   private loader: any;
+  private videoLoader: any;
   private country: any;
 	private trendingVideos: any[] = [];
   private embedUrl: any;
@@ -26,7 +27,10 @@ export class YoutubeComponent implements OnInit {
 	constructor(private youtubeService: YoutubeService, private sanitizer: DomSanitizer, public appContext: ContextService) {
 
   }
-
+  public loadVideo() : void {
+    console.log('AAA');
+    this.videoLoader = false;
+  }
   ngOnInit() {
     this.modal.backdrop = false;
     this.loadVideos('');
@@ -61,6 +65,7 @@ export class YoutubeComponent implements OnInit {
   }
 
   public openVideoPlayer(videoId: any) : void {
+    this.videoLoader = true;
     this.videoId = videoId;
     this.embedUrl = this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/' + videoId + '?autoplay=1');
     this.modal.open();

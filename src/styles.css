@@ -1,3 +1,9 @@
+.video-load {
+	background-color: #ffffff;
+	height: 315px;
+	width: 100%;
+	z-index: 999;
+	position: fixed; }
 .loader {
 	background-size: 150px 150px;
   background-repeat: no-repeat;
