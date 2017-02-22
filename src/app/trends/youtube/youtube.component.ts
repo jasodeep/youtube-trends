@@ -15,6 +15,7 @@ import * as moment from 'moment';
 
 export class YoutubeComponent implements OnInit {
 
+  private loader: any;
   private country: any;
 	private trendingVideos: any[] = [];
   private embedUrl: any;
@@ -37,6 +38,7 @@ export class YoutubeComponent implements OnInit {
     );
   }
   public loadVideos(countryCode: string) : void {
+    this.loader = true;
     this.youtubeService.getTrendingVideos(this.country).subscribe((result)=>{
       for (var i = 0; i < result.items.length; i++) {
         this.trendingVideos[i] = {
@@ -47,6 +49,7 @@ export class YoutubeComponent implements OnInit {
         };
         this.getVideoStats(i, result.items[i].id);
       }
+      this.loader = false;
     });
   }
 

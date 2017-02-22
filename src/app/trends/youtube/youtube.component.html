@@ -12,7 +12,7 @@
     </modal-footer>
 </modal>
 
-<div id="youtube">
+<div id="youtube" *ngIf="loader===false">
   <div class="row">
     <div class="col-md-4 col-sm-12" *ngFor="let videos of trendingVideos; let i = index">
       <div class="card" (click)="this.openVideoPlayer(videos.id)">
@@ -29,3 +29,4 @@
     </div>
   </div>
 </div>
+<div class="loader" *ngIf="loader===true"></div>
