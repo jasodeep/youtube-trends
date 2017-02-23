@@ -71,7 +71,12 @@ export class YoutubeComponent implements OnInit {
     this.modal.open();
   }
 
+  public modalDismiss() {
+      this.embedUrl = null;
+  }
+
   public modalClose() {
+    console.log('VIDEO PLAYER CLOSED !!');
     this.modal.close();
     this.embedUrl = null;
   }

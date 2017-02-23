@@ -27,6 +27,7 @@
   border: 0;
   background-color: #000000; }
 .modal-content {
+		border: 0;
     background-color: #000000; }
 
 /* youtube component styling */

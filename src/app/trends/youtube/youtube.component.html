@@ -1,9 +1,9 @@
-<modal #modal>
+<modal #modal (onDismiss)="modalDismiss()">
     <modal-header [show-close]="true">
         <h4 class="modal-title">Modal</h4>
     </modal-header>
     <modal-body>
-      <div class="video-container" style="height:0px;">
+      <div class="video-container">
         <div class="video-load" *ngIf="videoLoader"><div class="loader" style="margin-top: 75px;"></div></div>
         <iframe (load)='loadVideo()' width="100%" height="315" [src]="embedUrl" frameborder="0" allowfullscreen></iframe>
       </div>
